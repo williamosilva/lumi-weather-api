@@ -30,10 +30,10 @@ export class WeatherService {
 
     this.apiKey = apiKey;
     this.defaultLat = parseFloat(
-      this.configService.get<string>('DEFAULT_LAT') || '-23.5505',
+      this.configService.get<string>('DEFAULT_LAT') || '-23.2927',
     );
     this.defaultLon = parseFloat(
-      this.configService.get<string>('DEFAULT_LON') || '-46.6333',
+      this.configService.get<string>('DEFAULT_LON') || '-51.1732',
     );
     this.defaultUnits =
       this.configService.get<string>('DEFAULT_UNITS') || 'metric';

@@ -18,7 +18,7 @@ GET /weather
 ### Exemplos:
 
 ```
-# Clima padrão (São Paulo)
+# Clima padrão (Londrina)
 GET /weather
 
 # Clima para coordenadas específicas
