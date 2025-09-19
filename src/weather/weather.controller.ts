@@ -33,7 +33,7 @@ export class WeatherController {
     
     Se latitude e longitude não forem fornecidas, será usado a localização padrão configurada no servidor.
     
-    **Coordenadas padrão:** Londrina, Brasil (-23.2927, -51.1732)
+    Coordenadas padrão: Londrina, Brasil (-23.2927, -51.1732)
     `,
   })
   @ApiQuery({
@@ -56,9 +56,9 @@ export class WeatherController {
     enum: ['standard', 'metric', 'imperial'],
     description: `
     Unidade de medida para temperatura:
-    - **standard**: Kelvin (padrão)
-    - **metric**: Celsius
-    - **imperial**: Fahrenheit
+    - standard: Kelvin (padrão)
+    - metric: Celsius
+    - imperial: Fahrenheit
     `,
     example: 'metric',
   })
@@ -69,7 +69,7 @@ export class WeatherController {
     description: `
     Idioma para descrição das condições meteorológicas.
     
-    **Códigos suportados:** pt_br, en, es, fr, de, it, ja, zh_cn, etc.
+    Códigos suportados pt_br, en, es, fr, de, it, ja, zh_cn, etc.
     `,
     example: 'pt_br',
   })
@@ -80,7 +80,7 @@ export class WeatherController {
     description: `
     Partes da resposta a serem excluídas (separadas por vírgula).
     
-    **Opções:** current, minutely, hourly, daily, alerts
+    Opções current, minutely, hourly, daily, alerts
     `,
     example: 'minutely,hourly',
   })
