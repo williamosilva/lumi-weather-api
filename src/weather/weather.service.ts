@@ -37,7 +37,8 @@ export class WeatherService {
     );
     this.defaultUnits =
       this.configService.get<string>('DEFAULT_UNITS') || 'metric';
-    this.defaultLang = this.configService.get<string>('DEFAULT_LANG') || 'pt';
+    this.defaultLang =
+      this.configService.get<string>('DEFAULT_LANG') || 'pt_br';
   }
 
   async getWeather(query: WeatherQueryDto): Promise<WeatherResponse> {
